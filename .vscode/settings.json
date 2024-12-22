@@ -2,6 +2,9 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "limits": "cpp",
+        "utility": "cpp",
+        "xutility": "cpp"
     }
 }
