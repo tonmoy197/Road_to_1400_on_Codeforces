@@ -5,6 +5,8 @@
         "ostream": "cpp",
         "limits": "cpp",
         "utility": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xlocale": "cpp",
+        "xstring": "cpp"
     }
 }
