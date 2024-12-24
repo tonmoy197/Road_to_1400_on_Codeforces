@@ -1,0 +1,1 @@
+{"name":"Local: 13_Bitmask_paths","url":"f:\\100Days-Chellenge\\Bitwise Operations and Bitmasking\\13_Bitmask_paths.cpp","tests":[{"id":1734965044389,"input":"2\n1 2\n4 8\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\100Days-Chellenge\\Bitwise Operations and Bitmasking\\13_Bitmask_paths.cpp","group":"local","local":true}
