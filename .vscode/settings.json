@@ -7,6 +7,8 @@
         "utility": "cpp",
         "xutility": "cpp",
         "xlocale": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "cstdlib": "cpp",
+        "vector": "cpp"
     }
 }
