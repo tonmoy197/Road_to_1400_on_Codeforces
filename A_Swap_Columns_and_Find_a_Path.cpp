@@ -19,6 +19,7 @@ int main() {
                 maxPos = i;
             }
         }
+        // Saimon wants to learn git 
 
         // Compute the result
         ll ans = maxVal;  // Start with the maximum sum
