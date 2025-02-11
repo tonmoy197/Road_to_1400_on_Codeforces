@@ -3,30 +3,25 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    int tt; cin >> tt;
-    while(tt--) {
-        int n; cin >> n;
-        vector<ll> a(n), b(n);
-        for(auto &x : a) cin >> x;
-        for(auto &x : b) cin >> x;
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
 
-        // Calculate maxVal and its position
-        int maxPos = 0;
-        ll maxVal = a[0] + b[0];
-        for(int i = 1; i < n; i++) {
-            if(a[i] + b[i] > maxVal) {
-                maxVal = a[i] + b[i];
-                maxPos = i;
-            }
+        vector<ll> a(n), b(n), best(n), full(n);
+        for (int i = 0; i < n; i++) cin >> a[i];
+        for (int i = 0; i < n; i++) cin >> b[i];
+
+        ll sum_best = 0, ans = LLONG_MIN;
+        for (int i = 0; i < n; i++) {
+            best[i] = max(a[i], b[i]);
+            full[i] = a[i] + b[i];
+            sum_best += best[i];
         }
-        // Saimon wants to learn git 
 
-        // Compute the result
-        ll ans = maxVal;  // Start with the maximum sum
-        for(int i = 0; i < n; i++) {
-            if(i != maxPos) {
-                ans += max(a[i], b[i]);
-            }
+        for (int i = 0; i < n; i++) {
+            ans = max(ans, sum_best + full[i] - best[i]);
         }
 
         cout << ans << endl;
