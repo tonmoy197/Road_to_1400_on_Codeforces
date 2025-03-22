@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+#include <map>
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+ 
+int main()
+{
+int tt; cin >> tt;
+while( tt -- ){
+    int n; cin >> n; 
+    vector<int> a(n);
+    for(auto &x : a) cin >> x;
+
+    if(n == 1 ) cout << a[0] << endl;
+    else {
+        ll sum = 0;
+        for(auto x : a) sum += x;
+        cout << sum - (n -1) << endl;
+    }
+}
+return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+#include <map>
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+ 
+int main()
+{
+int tt; cin >> tt;
+while( tt -- ){
+    ll a, b, m; cin >> a >> b >> m;
+    ll x = m/a + 1;
+    ll y = m/b + 1;
+    cout << x + y << endl;
+}
+return 0;
+}
